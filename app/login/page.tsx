@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import Navbar from '../../components/Navbar';
 
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -34,7 +33,6 @@ export default function Login() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-500 to-blue-400">
-      <Navbar />
       <form
         onSubmit={handleSubmit}
         className="bg-white/90 p-10 rounded-2xl shadow-2xl w-full max-w-md border border-blue-100"

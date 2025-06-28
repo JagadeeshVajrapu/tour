@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import axios from 'axios';
 import dynamic from 'next/dynamic';
-import Navbar from '../../../components/Navbar';
 
 const ScreenRecorder = dynamic(() => import('../../../components/ScreenRecorder'), { ssr: false });
 const TourPreview = dynamic(() => import('../../../components/TourPreview'), { ssr: false });
@@ -82,7 +81,6 @@ export default function TourEditor() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center p-8">
-      <Navbar />
       <div className="w-full max-w-2xl mt-8">
         <ScreenRecorder />
         <form onSubmit={handleSubmit} className="bg-white/90 p-10 rounded-xl shadow-lg w-full border border-blue-100 mb-6">

@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import Navbar from '../../components/Navbar';
 
 interface Tour {
   _id: string;
